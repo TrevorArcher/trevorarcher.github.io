@@ -1,0 +1,120 @@
+img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+blockquote {
+  position: absolute;
+  top: 25vmin;
+  color: #fff;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-size: 1.5em;
+}
+
+em {
+  color: #c8375e;
+}
+
+strong {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000
+}
+
+a:active {
+  color: #000;
+}
+
+#zarathustra {
+  color: #fff;
+}
+
+#zarathustra:hover {
+  color: #c8375e;
+  transition-duration: 0.4s;
+}
+
+#zarathustra:active {
+  color: #000;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 5px 5px;
+}
+
+.menubutton {
+  display: inline-block;
+  margin: 10px 15px 10px 0px;
+  width: 10%;
+  max-width: 100px;
+  height: 25px;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #116f49;
+  border-radius: 2px;
+  background-color: #116f49;
+  padding: 5px 5px 0px;
+  text-align: center;
+}
+
+.test {
+  display: inline-block;
+  float: right;
+  margin: 10px 0px 10px 15px;
+  width: 10%;
+  max-width: 100px;
+  height: 25px;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #820f43;
+  border-radius: 2px;
+  background-color: #820f43;
+  padding: 5px 5px 0px;
+  text-align: center;
+}
+
+.test:hover, .menubutton:hover {
+  color: #000;
+  background-color: #fff;
+  transition-duration: 0.4s;
+}
+
+.disabled {
+  display: inline-block;
+  float: right;
+  margin: 10px 0px 10px 15px;
+  width: 10%;
+  max-width: 100px;
+  height: 25px;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.6;
+  border: 2px solid #820f43;
+  border-radius: 2px;
+  background-color: #820f43;
+  padding: 5px 5px 0px;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+.bio-container {
+  margin: auto;
+  border: 3px solid black;
+  padding: 20px;
+}
+
+.bio {
+  margin: auto;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-size: 1.5em;
+  text-align: left;
+  max-width: 75%;
+}
