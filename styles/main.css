@@ -12,11 +12,11 @@ a {
   text-decoration: none;
 }
 
-main h2 {
+/*main h2 {
   margin: 0 0 1rem;
   font-family: Helvetica, Arial, sans-serif;
   color: #444;
-}
+}*/
 
 main p {
   margin: 0 0 1rem;
@@ -25,6 +25,7 @@ main p {
 }
 
 #profile-image {
+  shape-outside: circle(50%);
   float: left;
   margin-right: 1.5rem;
   margin-bottom: 0.25rem;
@@ -32,7 +33,21 @@ main p {
   max-width: 150px;
 }
 
+.main-header h2 {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+.main-header h2:last-child {
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 768px) {
+  main p {
+    text-align: center;
+  }
   #profile-image {
     display: block;
     margin: 0 auto 1rem;
@@ -40,11 +55,7 @@ main p {
     width: 325px;
     max-width: 80%;
   }
-  main h2 {
-    text-align: center;
-  }
-
-  main p {
+  .main-header {
     text-align: center;
   }
 }
