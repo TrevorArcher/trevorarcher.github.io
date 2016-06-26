@@ -4,8 +4,18 @@ body {
 }
 
 main {
-  max-width: 80%;
+  max-width: 65%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+main h2 {
+  margin: 0 0 1rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #444;
 }
 
 main p {
@@ -17,11 +27,24 @@ main p {
 #profile-image {
   float: left;
   margin-right: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   border-radius: 50%;
-  max-width: 175px;
+  max-width: 150px;
 }
 
-a {
-  text-decoration: none;
+@media screen and (max-width: 768px) {
+  #profile-image {
+    display: block;
+    margin: 0 auto 1rem;
+    float: none;
+    width: 325px;
+    max-width: 80%;
+  }
+  main h2 {
+    text-align: center;
+  }
+
+  main p {
+    text-align: center;
+  }
 }

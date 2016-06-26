@@ -7,7 +7,7 @@ main {
   margin-top: -2rem;
 }
 
-img {
+.site-content img {
   position: relative;
   width: 100%;
   margin-bottom: 2em;
@@ -15,7 +15,7 @@ img {
 
 blockquote {
   position: absolute;
-  top: 25vmin;
+  top: 30vmin;
   color: #fff;
   font-family: 'Cormorant Garamond', Garamond, serif;
   font-size: 1.5em;
@@ -57,7 +57,7 @@ a:active {
 }
 
 .bio-container {
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
   border: 3px solid black;
   padding: 20px;
@@ -68,5 +68,15 @@ a:active {
   font-family: 'Cormorant Garamond', Garamond, serif;
   font-size: 1.5em;
   text-align: left;
-  max-width: 75%;
+  max-width: 85%;
+}
+
+@media screen and (max-width: 768px) {
+  blockquote {
+    top: 25vmin;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .quote {
+    margin: 0 auto;
+    background: none;
 }
