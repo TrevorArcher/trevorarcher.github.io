@@ -169,5 +169,6 @@ footer a img {
 @media screen and (max-width: 400px) {
   .mobile-header a img {
     max-width: 15%;
+    margin: 0 auto;
   }
 }
