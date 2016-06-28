@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles/nav.css" type="text/css">
-  <link rel="stylesheet" href="styles/main.css" type="text/css">
+  <link rel="stylesheet" href="styles/landing.css" type="text/css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
+      <div class="intro-header">
       <h1 class="site-name">
-        <a href="index.html">Trevor Archer</a>
+        <a>Trevor Archer</a>
       </h1>
+        <h2>Web Developer.</h2>
+        <h2>QA Engineer.</h2>
+        <h2>Bay Area Hipster.</h2>
+      </div>
       <nav>
         <ul class="navmenu">
           <li><a target="_blank" href="http://codepen.io/TrevorArcher">Codepen</a></li>
@@ -20,25 +24,10 @@
           <li><a href="quote.html">Quote</a></li>
         </ul>
       </nav>
-      <div class="mobile-header">
-        <a target="_blank" href="http://codepen.io/TrevorArcher"><img src="images/codepen.png" alt="codepen"></a>
-        <a target="_blank" href="https://github.com/trevorarcher"><img src="images/github.png" alt="github"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/trevorarcher"><img src="images/linkedin.png" alt="linkedin"></a>
-        <a target="_blank" href="mailto:trevor.a.archer@gmail.com"><img src="images/email.png" alt="email"></a>
-        <a href="quote.html"><img src="images/speech.png" alt="quote"></a>
-      </div>
-    </div>
-    <div class="to-top">
-      <a href="#"><img src="images/arrow_top.png" alt="back to top"></a>
     </div>
   </header>
   <main>
     <img src="images/profile.jpg" alt="author profile" id="profile-image">
-    <div class="intro-header">
-      <h2>Web Developer.</h2>
-      <h2>QA Engineer.</h2>
-      <h2>Bay Area Hipster.</h2>
-    </div>
     <div class="introduction">
       <p>
         I got my start in Orange County doing odd jobs for a local video game company.
@@ -53,6 +42,7 @@
     </div>
     <div class="past-projects">
       <h3>Past Projects</h3>
+      <!--Add new <ul> with homogenous inline-block elements for project links. Use absolute on figcaptions-->
       <figure>
         <a target="_blank" href="https://www.skylanders.com/"><img src="images/skylanders.png" alt="skylanders logo"></a>
         <figcaption>Activision Skylanders</figcaption>
