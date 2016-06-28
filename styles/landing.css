@@ -2,7 +2,7 @@ body {
   background: linear-gradient(rgba(127, 191, 63, 0.1), rgba(127, 191, 63, 0.1)),
     url(../images/sayagata-400px.png) fixed right top;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 header {
@@ -31,6 +31,10 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 main p {
@@ -65,25 +69,33 @@ main p {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .intro-header h2 {
   display: inline-block;
   margin: 0 0.5rem;
+  font-variant: small-caps;
 }
+
+/*Past projects*/
 
 .past-projects {
   display: inline-block;
   width: 100%;
   margin: 0 0 4rem;
+  text-align: center;
 }
 
 .past-projects h3 {
   margin: 2rem 0 0;
 }
 
-.past-projects figure {
+.project-list {
+  padding: 0;
+}
+
+.project-list li {
   display: inline-block;
   max-width: 30%;
   margin: auto 0;
@@ -91,12 +103,11 @@ main p {
   text-align: center;
 }
 
-.past-projects figure:nth-child(2) {
-  padding: 0 2.66% 0;
+.project-list figure {
+  margin: 0;
 }
 
-.past-projects figure img{
-  display: inline-block;
+.project-list figure img {
   width: 100%;
 }
 
@@ -104,7 +115,7 @@ main p {
 
 .navmenu {
   position: absolute;
-  height: 2rem;
+  height: 2.5rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -113,15 +124,18 @@ main p {
 }
 
 .navmenu li {
+  width: 10%;
   height: 100%;
   display: inline-block;
-  list-style-type: none;
 }
 
 .navmenu li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
-  padding: 20px 10px;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -143,7 +157,6 @@ footer a img {
   background: #ddd;
   height: 60px;
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .site-footer a p {
@@ -194,10 +207,6 @@ footer a img {
     display: block;
     min-width: 50%;
     margin: 0 auto;
-    padding: 0;
-  }
-
-  .past-projects figure:nth-child(2) {
     padding: 0;
   }
 }
