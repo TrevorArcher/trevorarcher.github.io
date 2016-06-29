@@ -18,10 +18,7 @@ header {
   margin-top: 0;
   position: relative;
   text-align: center;
-}
-
-main {
-  max-width: 65%;
+  overflow: hidden;
 }
 
 h1 {
@@ -54,6 +51,11 @@ ul {
   max-width: 150px;
 }
 
+.main-content {
+  max-width: 65%;
+  margin: auto;
+}
+
 .intro-header {
   position: absolute;
   top: 35%;
@@ -73,8 +75,9 @@ ul {
 /*Past projects*/
 
 .past-projects {
-  display: inline-block;
+  clear: both;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -84,28 +87,15 @@ ul {
 
 .project-list li {
   display: inline-block;
-  width: 30%;
-  min-width: 200px;
-  margin: auto 0 1rem;
-  font-size: 0.75em;
-  text-align: center;
+  width: 25%;
+  min-width: 150px;
+  margin: 10px;
+  overflow: hidden;
 }
 
-.project-list figure {
-  position: relative;
-  margin: 0;
-}
-
-/*.project-list figcaption {
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}*/
-
-.project-list figure img {
+.project-list li img{
   width: 100%;
+  vertical-align: bottom;
 }
 
 /*Navigation*/
@@ -136,7 +126,7 @@ ul {
   text-align: center;
 }
 
-.navmenu li a:hover {
+.navmenu a:hover {
   color: rgba(50, 50, 50, 0.9);
   background: rgba(255, 255, 255, 0.925);
   transition-duration: 0.4s;
@@ -176,13 +166,13 @@ footer a img {
 /*Media queries*/
 
 @media screen and (max-width: 768px) {
-  main p {
+  .main-content p {
     text-align: center;
   }
 
-nav {
-  display: none;
-}
+  nav {
+    display: none;
+  }
 
   figcaption {
     display: none;
