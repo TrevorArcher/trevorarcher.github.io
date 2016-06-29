@@ -133,8 +133,8 @@ ul {
 }
 
 footer a img {
-  border-radius: 50%;
-  width: 40px;
+  width: 35px;
+  vertical-align: bottom;
 }
 
 .site-footer {
@@ -160,7 +160,7 @@ footer a img {
 }
 
 .site-footer div a img {
-  margin: 5px 0 0 5px;
+  margin: 5px 0 0 10px;
 }
 
 /*Media queries*/
