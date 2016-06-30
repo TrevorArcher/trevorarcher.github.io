@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../images/hipster_space.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6em;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-variant: small-caps;
+  margin: 0 0 1rem;
+}
+
+a {
+  z-index: 1;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-buttons {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.nav-buttons img {
+  display: inline-block;
+  width: 40px;
+  margin: 5px;
+}
+
+main {
+  display:flex;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1em;
+  height: 40px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.header-content{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  font-weight: bold;
+  color: rgba(175, 175, 175, 0.8);
+}
+
+.img-grid {
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  width: 66.67%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flex-content {
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 33.33%;
+  margin: 0;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.flex-content h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.flex-content p{
+  font-variant: small-caps;
+}
+
+.img-grid img {
+  display: inline-block;
+  width: 30%;
+  min-width: 150px;
+  vertical-align: bottom;
+  margin: 10px;
+}
