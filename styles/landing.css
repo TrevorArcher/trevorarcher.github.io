@@ -82,15 +82,13 @@ ul {
 
 .project-list {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
   flex-wrap: wrap;
   padding: 0;
 }
 
 .project-list li {
   display: flex;
-  width: 25%;
+  width: 30%;
   min-width: 200px;
   margin: auto;
   overflow: hidden;
