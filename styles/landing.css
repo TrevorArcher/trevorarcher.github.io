@@ -76,26 +76,30 @@ ul {
 
 .past-projects {
   clear: both;
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .project-list {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
   padding: 0;
 }
 
 .project-list li {
-  display: inline-block;
+  display: flex;
   width: 25%;
-  min-width: 150px;
-  margin: 10px;
+  min-width: 200px;
+  margin: auto;
   overflow: hidden;
 }
 
 .project-list li img{
   width: 100%;
   vertical-align: bottom;
+  margin: 10px;
 }
 
 /*Navigation*/
