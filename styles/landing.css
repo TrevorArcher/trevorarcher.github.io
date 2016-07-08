@@ -195,11 +195,26 @@ footer a img {
     margin: 2rem 0 0.5rem;
   }
 
-  .past-projects figure {
+  .past-projects li {
     display: block;
-    min-width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .site-footer {
+    text-align: center;
+  }
+  .site-footer a p {
+    display: none;
+  }
+
+  .site-footer div {
+    float: none;
+    margin: 0 auto;
   }
 }
 
@@ -233,10 +248,27 @@ only screen and (min-device-pixel-ratio: 1.5) {
     margin: 2rem 0 0.5rem;
   }
 
-  .past-projects figure {
+  .past-projects li {
     display: block;
-    min-width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer a p {
+    display: none;
+  }
+
+  .site-footer div {
+    float: none;
+    margin: 0 auto;
   }
 }
