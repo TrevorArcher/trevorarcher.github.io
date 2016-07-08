@@ -202,3 +202,41 @@ footer a img {
     padding: 0;
   }
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .main-content p {
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  #profile-image {
+    display: block;
+    margin: 0 auto 1rem;
+    float: none;
+    width: 325px;
+    max-width: 80%;
+  }
+  .intro-header {
+    text-align: center;
+  }
+
+  .past-projects h3 {
+    margin: 2rem 0 0.5rem;
+  }
+
+  .past-projects figure {
+    display: block;
+    min-width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
