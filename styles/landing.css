@@ -1,21 +1,14 @@
 body {
-  background: linear-gradient(rgba(127, 191, 63, 0.1), rgba(127, 191, 63, 0.1)),
-    url(../images/sayagata-400px.png) fixed right top; /* Background pattern from subtlepatterns.com */
   margin: 0 auto;
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-header, main {
-  margin: 2rem auto;
-}
-
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/green_coffee.jpeg) no-repeat center top; /* Background image from pexels.com under CC0 license*/
+    url(../images/green_coffee.jpeg) no-repeat center top;
   background-size: cover;
   max-width: 100%;
   height: 100vh;
-  margin-top: 0;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -26,12 +19,15 @@ h1 {
   font-size: 5em;
 }
 
-h3, p {
+main p {
   color: #555;
 }
 
-h3 {
+main h2 {
   text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
 }
 
 a {
@@ -42,18 +38,30 @@ ul {
   list-style-type: none;
 }
 
+hr {
+  width: 10rem;
+  margin-bottom: 4rem;
+}
+
+fieldset {
+  border: none;
+  text-align: center;
+}
+
 #profile-image {
-  shape-outside: circle(50%);
-  float: left;
-  margin-right: 1.5rem;
-  margin-bottom: 0.25rem;
   border-radius: 50%;
   max-width: 150px;
 }
+.main-content,
+.past-projects,
+.contact {
+  padding: 6rem 0;
+}
 
 .main-content {
-  max-width: 65%;
-  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: #adddce;
 }
 
 .intro-header {
@@ -72,12 +80,20 @@ ul {
   font-variant: small-caps;
 }
 
+.introduction {
+  padding: 0 20%;
+}
+
 /*Past projects*/
 
 .past-projects {
-  clear: both;
-  width: 85%;
+  width: 100%;
+  background-color: #fdfdfd;
   margin: 0 auto;
+}
+
+.past-projects h2 {
+  color: #555;
 }
 
 .project-list {
@@ -121,6 +137,28 @@ ul {
 .coming-soon:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+  transition-duration: 0.4s;
+}
+
+/*Contact*/
+.contact {
+  background-color: #59c3c3;
+  /*background-color: #068D9D;*/
+}
+
+fieldset * {
+  width: 30%;
+  min-width: 15rem;
+  font-family: inherit;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  border: 3px solid transparent;
+  margin: 0.5rem;
+}
+
+fieldset *:focus {
+  border: 3px solid #C78283;
+  transition-duration: 0.3s;
 }
 
 /*Navigation*/
@@ -166,7 +204,7 @@ footer a img {
   box-sizing: border-box;
   margin-top: auto;
   padding: 0.5rem 1rem 0;
-  background: #ddd;
+  background: #bbb;
   height: 60px;
   width: 100%;
 }
@@ -212,6 +250,11 @@ footer a img {
   }
   .intro-header {
     text-align: center;
+  }
+
+  .past-projects,
+  .main-content {
+    padding: 2rem 0;
   }
 
   .past-projects h3 {
@@ -265,6 +308,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
   .intro-header {
     text-align: center;
+  }
+
+  .past-projects,
+  .main-content {
+    padding: 2rem 0;
   }
 
   .past-projects h3 {
