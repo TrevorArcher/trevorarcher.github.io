@@ -149,15 +149,20 @@ fieldset * {
   width: 30%;
   min-width: 15rem;
   font-family: inherit;
+  font-style: italic;
   border-radius: 2px;
   padding: 0.25rem 0.5rem;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   margin: 0.5rem;
 }
 
 fieldset *:focus {
-  border: 3px solid #C78283;
+  border: 2px solid #c78283;
   transition-duration: 0.3s;
+}
+
+fieldset *:last-child {
+  font-style: normal;
 }
 
 /*Navigation*/
@@ -203,18 +208,18 @@ footer a img {
   box-sizing: border-box;
   margin-top: auto;
   padding: 0.5rem 1rem 0;
-  background: #bbb;
+  background: #dadada;
   height: 60px;
   width: 100%;
 }
 
-.site-footer a p {
-  margin: 1rem 0 0 0;
+.site-footer p {
+  margin: 0.75rem 0 0;
   font-size: 1em;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  color: #000;
+  color: #79A75D;
 }
 .site-footer div {
   display: inline-block;
@@ -231,7 +236,7 @@ footer a img {
   h1 {
     font-size: 3em;
   }
-  
+
   .main-content p {
     text-align: center;
   }
