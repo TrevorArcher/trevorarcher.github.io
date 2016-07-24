@@ -114,13 +114,6 @@ fieldset {
 .project-list li img{
   max-width: 100%;
   vertical-align: bottom;
-  margin: 10px;
-}
-
-.project-list li img{
-  max-width: 100%;
-  vertical-align: bottom;
-  margin: 10px;
 }
 
 .coming-soon {
@@ -207,9 +200,9 @@ footer a img {
 .site-footer {
   box-sizing: border-box;
   margin-top: auto;
-  padding: 0.5rem 1rem 0;
+  padding: 0.25rem 1rem 0;
   background: #dadada;
-  height: 60px;
+  height: 3.25rem;
   width: 100%;
 }
 
@@ -232,75 +225,12 @@ footer a img {
 
 /*Media queries*/
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  .main-content p {
-    text-align: center;
-  }
-
-  nav {
-    display: none;
-  }
-
-  figcaption {
-    display: none;
-  }
-
-  #profile-image {
-    display: block;
-    margin: 0 auto 1rem;
-    float: none;
-    width: 325px;
-    max-width: 80%;
-  }
-  .intro-header {
-    text-align: center;
-  }
-
-  .past-projects,
-  .main-content {
-    padding: 2rem 0;
-  }
-
-  .past-projects h3 {
-    margin: 2rem 0 0.5rem;
-  }
-
-  .past-projects li {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .site-footer {
-    text-align: center;
-  }
-  .site-footer a p {
-    display: none;
-  }
-
-  .site-footer div {
-    float: none;
-    margin: 0 auto;
-  }
-}
-
 @media
+screen and (max-width: 768px),
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
   h1 {
-    font-size: 3em;
-  }
-
-  .main-content p {
-    text-align: center;
+    font-size: 4em;
   }
 
   nav {
@@ -313,13 +243,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
   #profile-image {
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     float: none;
-    width: 325px;
+    width: 200px;
     max-width: 80%;
   }
+
   .intro-header {
     text-align: center;
+    top: 25%;
+  }
+
+  .introduction {
+    padding: 0 5%;
   }
 
   .past-projects,
@@ -327,31 +263,33 @@ only screen and (min-device-pixel-ratio: 1.5) {
     padding: 2rem 0;
   }
 
-  .past-projects h3 {
-    margin: 2rem 0 0.5rem;
-  }
-
   .past-projects li {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    margin: 0.5rem auto;
     padding: 0;
   }
-  img {
-    max-width: 100%;
-    height: auto;
+
+  .coming-soon {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
   }
 
   .site-footer {
     text-align: center;
+    padding: 0.5rem;
   }
 
-  .site-footer a p {
+  .site-footer p {
     display: none;
   }
 
   .site-footer div {
     float: none;
     margin: 0 auto;
+  }
+
+  .site-footer div a img {
+    margin: 0 1rem;
   }
 }
