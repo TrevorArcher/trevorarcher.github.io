@@ -116,7 +116,7 @@ fieldset {
   vertical-align: bottom;
 }
 
-.coming-soon {
+.project-overlay {
   position: absolute;
   color: transparent;
   text-align: center;
@@ -126,9 +126,9 @@ fieldset {
   height: 100%;
 }
 
-.coming-soon:hover {
+.project-overlay:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #eee;
   transition-duration: 0.4s;
 }
 
@@ -270,9 +270,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
     padding: 0;
   }
 
-  .coming-soon {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+  .project-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fdfdfd;
   }
 
   .site-footer {
