@@ -226,9 +226,10 @@ footer a img {
 /*Media queries*/
 
 @media
-screen and (max-width: 768px),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+screen
+and (max-width: 768px)
+and (-webkit-min-device-pixel-ratio: 1.5)
+and (min-device-pixel-ratio: 1.5) {
   h1 {
     font-size: 4em;
   }
