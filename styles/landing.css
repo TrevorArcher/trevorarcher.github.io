@@ -135,14 +135,16 @@ fieldset {
 /*Contact*/
 .contact {
   background-color: #59c3c3;
-  /*background-color: #068D9D;*/
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
 }
 
 fieldset * {
   width: 30%;
   min-width: 15rem;
   font-family: inherit;
-  font-style: italic;
   border-radius: 2px;
   padding: 0.25rem 0.5rem;
   border: 2px solid transparent;
@@ -150,7 +152,7 @@ fieldset * {
 }
 
 fieldset *:focus {
-  border: 2px solid #c78283;
+  border: 2px solid #068d9d;
   transition-duration: 0.3s;
 }
 
@@ -212,7 +214,7 @@ footer a img {
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
-  color: #79A75D;
+  color: #068d9d;
 }
 .site-footer div {
   display: inline-block;
@@ -226,8 +228,8 @@ footer a img {
 /*Media queries*/
 
 @media
-only screen
-and (max-width: 768px) {
+only screen and (max-width: 768px),
+only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5){
   h1 {
     font-size: 4em;
   }
