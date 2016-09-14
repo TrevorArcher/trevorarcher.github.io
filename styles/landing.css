@@ -109,6 +109,8 @@ fieldset {
   min-width: 200px;
   margin: auto;
   overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 2px;
 }
 
 .project-list li img{
