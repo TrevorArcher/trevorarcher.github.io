@@ -1,0 +1,225 @@
+body {
+  margin: 0 auto;
+  font-family: "Open Sans", Helvetica, sans-serif; }
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/green_coffee.jpeg) no-repeat fixed center top;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
+h1 {
+  margin: 0 auto 1.5rem;
+  font-size: 5em; }
+
+main p {
+  color: #555; }
+main h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  color: #fff; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+hr {
+  width: 10rem;
+  margin-bottom: 4rem; }
+
+fieldset {
+  border: none;
+  text-align: center; }
+
+#profile-image {
+  border-radius: 50%;
+  max-width: 150px; }
+
+.main-content,
+.past-projects,
+.contact {
+  padding: 6rem 0; }
+
+.main-content {
+  text-align: center;
+  width: 100%;
+  background-color: #adddce; }
+
+.intro-header {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.85); }
+  .intro-header h2 {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-variant: small-caps; }
+
+.introduction {
+  padding: 0 20%; }
+
+/*Past projects*/
+.past-projects {
+  width: 100%;
+  background-color: #fdfdfd;
+  margin: 0 auto; }
+  .past-projects h2 {
+    color: #555; }
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; }
+  .project-list li {
+    position: relative;
+    display: flex;
+    max-width: 20em;
+    min-width: 200px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 2px; }
+    .project-list li img {
+      max-width: 100%;
+      vertical-align: bottom; }
+
+.project-overlay {
+  position: absolute;
+  color: transparent;
+  font-size: 125%;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+  .project-overlay p {
+    color: inherit; }
+  .project-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
+    transition-duration: 0.4s; }
+
+/*Contact*/
+.contact {
+  background-color: #59c3c3; }
+
+::-webkit-input-placeholder {
+  font-style: italic; }
+
+fieldset * {
+  width: 30%;
+  min-width: 15rem;
+  font-family: inherit;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  border: 2px solid transparent;
+  margin: 0.5rem; }
+  fieldset *:focus {
+    border: 2px solid #FFDBC8;
+    transition-duration: 0.2s; }
+  fieldset *:last-child {
+    font-style: normal; }
+
+/*Navigation*/
+.navmenu {
+  position: absolute;
+  height: 2.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0; }
+  .navmenu li {
+    width: 10%;
+    height: 100%;
+    display: inline-block; }
+    .navmenu li a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.8);
+      padding-top: 0.5rem;
+      text-align: center; }
+      .navmenu li a:hover {
+        color: rgba(50, 50, 50, 0.9);
+        background: rgba(255, 255, 255, 0.925);
+        transition-duration: 0.4s; }
+
+footer a img {
+  width: 35px;
+  vertical-align: bottom; }
+
+.site-footer {
+  box-sizing: border-box;
+  margin-top: auto;
+  padding: 0.25rem 1rem 0;
+  background: #dadada;
+  height: 3.25rem;
+  width: 100%; }
+  .site-footer p {
+    margin: 0.75rem 0 0;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #068d9d; }
+  .site-footer div {
+    display: inline-block;
+    float: right; }
+    .site-footer div a img {
+      margin: 5px 0 0 10px; }
+
+/*Media queries*/
+@media only screen and (max-width: 768px), only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  h1 {
+    font-size: 4em; }
+
+  nav {
+    display: none; }
+
+  #profile-image {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 200px;
+    max-width: 80%; }
+
+  .intro-header {
+    text-align: center;
+    top: 25%; }
+
+  .introduction {
+    padding: 0 5%; }
+
+  .past-projects,
+  .main-content {
+    padding: 2rem 0; }
+
+  .past-projects li {
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0; }
+
+  .site-footer {
+    text-align: center;
+    padding: 0.5rem; }
+    .site-footer p {
+      display: none; }
+    .site-footer div {
+      float: none;
+      margin: 0 auto; }
+      .site-footer div a img {
+        margin: 0 1rem; } }
+
+/*# sourceMappingURL=landing.css.map */

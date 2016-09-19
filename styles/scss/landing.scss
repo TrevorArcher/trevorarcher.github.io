@@ -1,3 +1,5 @@
+@import '_utilities';
+
 body {
   margin: 0 auto;
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -5,7 +7,7 @@ body {
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/green_coffee.jpeg) no-repeat fixed center top;
+    url(../../images/green_coffee.jpeg) no-repeat fixed center top;
   background-size: cover;
   max-width: 100%;
   height: 100vh;
@@ -19,15 +21,16 @@ h1 {
   font-size: 5em;
 }
 
-main p {
+main {
+  p {
   color: #555;
-}
-
-main h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
-  color: #fff;
+  }
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+  }
 }
 
 a {
@@ -73,12 +76,11 @@ fieldset {
   margin-left: auto;
   margin-right: auto;
   color: rgba(255, 255, 255, 0.85);
-}
-
-.intro-header h2 {
-  display: inline-block;
-  margin: 0 0.5rem;
-  font-variant: small-caps;
+  h2 {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-variant: small-caps;
+  }
 }
 
 .introduction {
@@ -91,32 +93,29 @@ fieldset {
   width: 100%;
   background-color: #fdfdfd;
   margin: 0 auto;
-}
-
-.past-projects h2 {
-  color: #555;
+  h2 {
+    color: #555;
+  }
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-}
-
-.project-list li {
-  position: relative;
-  display: flex;
-  max-width: 20em;
-  min-width: 200px;
-  margin: auto;
-  overflow: hidden;
-  border: 2px solid #ccc;
-  border-radius: 2px;
-}
-
-.project-list li img{
-  max-width: 100%;
-  vertical-align: bottom;
+  li {
+    position: relative;
+    display: flex;
+    max-width: 20em;
+    min-width: 200px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    img {
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+  }
 }
 
 .project-overlay {
@@ -128,16 +127,14 @@ fieldset {
   right: 0;
   width: 100%;
   height: 100%;
-}
-
-.project-overlay p {
-  color: inherit;
-}
-
-.project-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #eee;
-  transition-duration: 0.4s;
+  p {
+    color: inherit;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #eee;
+    transition-duration: 0.4s;
+  }
 }
 
 /*Contact*/
@@ -157,15 +154,13 @@ fieldset * {
   padding: 0.25rem 0.5rem;
   border: 2px solid transparent;
   margin: 0.5rem;
-}
-
-fieldset *:focus {
-  border: 2px solid #FFDBC8;
-  transition-duration: 0.2s;
-}
-
-fieldset *:last-child {
-  font-style: normal;
+  &:focus {
+    border: 2px solid #FFDBC8;
+    transition-duration: 0.2s;
+  }
+  &:last-child {
+    font-style: normal;
+  }
 }
 
 /*Navigation*/
@@ -178,28 +173,25 @@ fieldset *:last-child {
   right: 0;
   margin: 0 auto;
   padding: 0;
-}
-
-.navmenu li {
-  width: 10%;
-  height: 100%;
-  display: inline-block;
-}
-
-.navmenu li a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
-  padding-top: 0.5rem;
-  text-align: center;
-}
-
-.navmenu a:hover {
-  color: rgba(50, 50, 50, 0.9);
-  background: rgba(255, 255, 255, 0.925);
-  transition-duration: 0.4s;
+  li {
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.8);
+      padding-top: 0.5rem;
+      text-align: center;
+      &:hover {
+        color: rgba(50, 50, 50, 0.9);
+        background: rgba(255, 255, 255, 0.925);
+        transition-duration: 0.4s;
+      }
+    }
+  }
 }
 
 footer a img {
@@ -214,23 +206,21 @@ footer a img {
   background: #dadada;
   height: 3.25rem;
   width: 100%;
-}
-
-.site-footer p {
-  margin: 0.75rem 0 0;
-  font-size: 1em;
-  font-weight: bold;
-  display: inline-block;
-  text-decoration: none;
-  color: #068d9d;
-}
-.site-footer div {
-  display: inline-block;
-  float: right;
-}
-
-.site-footer div a img {
-  margin: 5px 0 0 10px;
+  p {
+    margin: 0.75rem 0 0;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #068d9d;
+  }
+  div {
+    display: inline-block;
+    float: right;
+    a img {
+      margin: 5px 0 0 10px;
+    }
+  }
 }
 
 /*Media queries*/
@@ -278,18 +268,15 @@ only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5){
   .site-footer {
     text-align: center;
     padding: 0.5rem;
-  }
-
-  .site-footer p {
-    display: none;
-  }
-
-  .site-footer div {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .site-footer div a img {
-    margin: 0 1rem;
+    p {
+      display: none;
+    }
+    div {
+      float: none;
+      margin: 0 auto;
+      a img {
+        margin: 0 1rem;
+      }
+    }
   }
 }

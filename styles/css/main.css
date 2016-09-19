@@ -1,0 +1,88 @@
+body {
+  background: url(../images/sayagata-400px.png) fixed right top;
+  margin: 0 auto;
+  font-family: Helvetica, Arial, sans-serif; }
+
+main {
+  max-width: 65%;
+  margin: 0 auto; }
+
+h3 {
+  text-align: center;
+  color: #444; }
+
+a {
+  text-decoration: none; }
+
+main p {
+  margin: 0 0 1rem;
+  color: #444; }
+
+#profile-image {
+  shape-outside: circle(50%);
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 50%;
+  max-width: 150px; }
+
+.intro-header h2 {
+  display: inline-block;
+  margin: 0 auto;
+  color: #444; }
+
+.intro-header h2:last-child {
+  margin-bottom: 1rem; }
+
+.past-projects {
+  display: inline-block;
+  width: 100%;
+  margin: 0; }
+
+.past-projects h3 {
+  margin: 2rem 0 0; }
+
+.past-projects figure {
+  display: inline-block;
+  max-width: 30%;
+  margin: auto 0;
+  font-size: 0.75em;
+  text-align: center; }
+
+.past-projects figure:nth-child(2) {
+  padding: 0 2.66% 0; }
+
+.past-projects figure img {
+  display: inline-block;
+  width: 100%; }
+
+@media screen and (max-width: 768px) {
+  main p {
+    text-align: center; }
+
+  figcaption {
+    display: none; }
+
+  #profile-image {
+    display: block;
+    margin: 0 auto 1rem;
+    float: none;
+    width: 325px;
+    max-width: 80%; }
+
+  .intro-header {
+    text-align: center; }
+
+  .past-projects h3 {
+    margin: 2rem 0 0.5rem; }
+
+  .past-projects figure {
+    display: block;
+    min-width: 50%;
+    margin: 0 auto;
+    padding: 0; }
+
+  .past-projects figure:nth-child(2) {
+    padding: 0; } }
+
+/*# sourceMappingURL=main.css.map */

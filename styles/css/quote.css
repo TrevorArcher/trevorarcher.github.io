@@ -1,0 +1,69 @@
+body {
+  background: url(../images/sayagata-400px.png) fixed right top;
+  margin: 0 auto; }
+
+main {
+  margin-top: -2rem; }
+
+.site-content img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2em; }
+
+blockquote {
+  position: absolute;
+  top: 30vmin;
+  color: #fff;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-size: 1.5em; }
+
+em {
+  color: #c8375e; }
+
+strong {
+  font-size: 30px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:active {
+  color: #000; }
+
+#zarathustra {
+  color: #fff; }
+
+#zarathustra:hover {
+  color: #c8375e;
+  transition-duration: 0.4s; }
+
+#zarathustra:active {
+  color: #000; }
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 5px 5px; }
+
+.bio-container {
+  max-width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  padding: 20px; }
+
+.bio {
+  margin: auto;
+  font-family: 'Cormorant Garamond', Garamond, serif;
+  font-size: 1.5em;
+  text-align: left;
+  max-width: 85%; }
+
+@media screen and (max-width: 768px) {
+  blockquote {
+    top: 25vmin;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+  .quote {
+    margin: 0 auto;
+    background: none; } }
+
+/*# sourceMappingURL=quote.css.map */
