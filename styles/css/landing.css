@@ -108,6 +108,9 @@ fieldset {
     color: #eee;
     transition-duration: 0.4s; }
 
+.qa {
+  display: none; }
+
 /*Contact*/
 #contact {
   background-color: #59c3c3; }
