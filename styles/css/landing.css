@@ -75,6 +75,9 @@ fieldset {
   #projects h2 {
     color: #555; }
 
+.project-nav li:hover {
+  cursor: pointer; }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -108,8 +111,12 @@ fieldset {
     color: #eee;
     transition-duration: 0.4s; }
 
-.qa {
+.qa,
+.web {
   display: none; }
+
+.project-active {
+  display: flex; }
 
 /*Contact*/
 #contact {

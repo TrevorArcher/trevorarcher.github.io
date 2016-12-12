@@ -98,6 +98,14 @@ fieldset {
   }
 }
 
+.project-nav {
+  li {
+    &:hover{
+    cursor: pointer;
+    }
+  }
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -137,8 +145,13 @@ fieldset {
   }
 }
 
-.qa {
+.qa,
+.web {
   display: none;
+}
+
+.project-active {
+  display: flex;
 }
 
 /*Contact*/
