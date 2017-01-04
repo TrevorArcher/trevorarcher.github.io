@@ -43,7 +43,7 @@ ul {
 
 hr {
   width: 10rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 fieldset {
@@ -99,11 +99,22 @@ fieldset {
 }
 
 .project-nav {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
   li {
+    color: #555;
+    display: inline-block;
+    margin: 0 1rem;
     &:hover{
     cursor: pointer;
     }
   }
+}
+
+.project-nav-active {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .project-list {
@@ -201,41 +212,49 @@ fieldset * {
 }
 
 .left-shark {
+  position: absolute;
+  bottom: 1rem;
+  right: 50.5%;
   border-radius: 5rem 0 0 5rem;
+  transition-duration: 0.3s;
+  &:hover {
+    position: absolute;
+    width: 110%;
+  }
 }
 
 .right-shark {
+  position: absolute;
+  bottom: 1rem;
+  left: 50.5%;
   border-radius: 0 5rem 5rem 0;
+  transition-duration: 0.3s;
+  &:hover {
+    position: absolute;
+    width: 110%;
+  }
 }
 
-// .navmenu {
-//   position: absolute;
-//   height: 2.5rem;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: 0 auto;
-//   padding: 0;
-//   li {
-//     width: 10%;
-//     height: 100%;
-//     display: inline-block;
-//     a {
-//       display: inline-block;
-//       width: 100%;
-//       height: 100%;
-//       font-weight: bold;
-//       color: rgba(255, 255, 255, 0.8);
-//       padding-top: 0.5rem;
-//       text-align: center;
-//       &:hover {
-//         color: rgba(50, 50, 50, 0.9);
-//         background: rgba(255, 255, 255, 0.925);
-//         transition-duration: 0.4s;
-//       }
-//     }
-//   }
-// }
+.nav-option-1,
+.nav-option-2 {
+  position: absolute;
+  bottom: 0.5rem;
+  line-height: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-option-1 {
+  right: 0.5rem;
+}
+
+.nav-option-2 {
+  left: 0.5rem;
+}
+
+.nav-option-visible {
+  display: none;
+}
 
 footer a img {
   width: 35px;
