@@ -6,7 +6,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../images/green_coffee.jpg) no-repeat fixed center top;
   background-size: cover;
   max-width: 100%;
-  height: 70vh;
+  height: 100vh;
   position: relative;
   text-align: center;
   overflow: hidden; }
@@ -31,7 +31,7 @@ ul {
 
 hr {
   width: 10rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
 
 fieldset {
   border: none;
@@ -75,6 +75,21 @@ fieldset {
   #projects h2 {
     color: #555; }
 
+.project-nav {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto; }
+  .project-nav li {
+    color: #555;
+    display: inline-block;
+    margin: 0 1rem; }
+    .project-nav li:hover {
+      cursor: pointer; }
+
+.project-nav-active {
+  font-weight: bold;
+  text-decoration: underline; }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -108,8 +123,12 @@ fieldset {
     color: #eee;
     transition-duration: 0.4s; }
 
-.qa {
+.qa,
+.web {
   display: none; }
+
+.project-active {
+  display: flex; }
 
 /*Contact*/
 #contact {
@@ -135,28 +154,48 @@ fieldset * {
 /*Navigation*/
 .navmenu {
   position: absolute;
-  height: 2.5rem;
-  bottom: 0;
+  bottom: 0.5rem;
   left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 0; }
-  .navmenu li {
-    width: 10%;
-    height: 100%;
-    display: inline-block; }
-    .navmenu li a {
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      font-weight: bold;
-      color: rgba(255, 255, 255, 0.8);
-      padding-top: 0.5rem;
-      text-align: center; }
-      .navmenu li a:hover {
-        color: rgba(50, 50, 50, 0.9);
-        background: rgba(255, 255, 255, 0.925);
-        transition-duration: 0.4s; }
+  right: 0; }
+
+.half-circ {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  background-color: #adddce;
+  width: 2rem;
+  height: 4rem;
+  transition-duration: 0.4s; }
+  .half-circ:hover {
+    width: 110%; }
+  .half-circ .fa {
+    margin-top: 1.5rem;
+    color: #333; }
+
+.left-shark {
+  right: 50.5%;
+  border-radius: 5rem 0 0 5rem; }
+
+.right-shark {
+  left: 50.5%;
+  border-radius: 0 5rem 5rem 0; }
+
+.nav-option-1,
+.nav-option-2 {
+  position: absolute;
+  bottom: 0.5rem;
+  line-height: 1rem;
+  color: #333;
+  font-weight: bold; }
+
+.nav-option-1 {
+  right: 0.5rem; }
+
+.nav-option-2 {
+  left: 0.5rem; }
+
+.nav-option-visible {
+  display: none; }
 
 footer a img {
   width: 35px;
