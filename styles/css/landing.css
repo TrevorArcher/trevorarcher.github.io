@@ -146,8 +146,10 @@ fieldset * {
   border: 2px solid transparent;
   margin: 0.5rem; }
   fieldset *:focus {
-    border: 2px solid #FFDBC8;
+    box-shadow: inset -2px 2px 10px rgba(0, 0, 0, 0.2);
     transition-duration: 0.2s; }
+    fieldset *:focus::-webkit-input-placeholder {
+      color: transparent; }
   fieldset *:last-child {
     font-style: normal; }
 
