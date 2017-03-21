@@ -1,3 +1,5 @@
+window.location = "http://trevorarcher.com";
+
 $('.li-web').on('click', function(){
   if ($('.li-web').hasClass('project-nav-active')){
     console.log("this is a thing");
